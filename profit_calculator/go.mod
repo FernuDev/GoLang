@@ -1,3 +1,3 @@
-module example.com/investment-calculator
+module profit-calculator
 
 go 1.25.3
