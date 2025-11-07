@@ -7,17 +7,10 @@ import (
 
 func main() {
 
-	// Data types
+	investmentAmount, years := 1000.0, 10.0
+	expectedReturnRate := 5.5
 
-	// Integer value
-	var investmentAmount = 1000
-
-	// Float value
-	var expectedReturnRate = 5.5
-
-	var years = 10
-
-	var futureValue = float64(investmentAmount) * math.Pow(1+expectedReturnRate/100, float64(years))
+	var futureValue = investmentAmount * math.Pow(1+expectedReturnRate/100, years)
 
 	fmt.Printf("Your return value will %f\n", futureValue)
 
